@@ -1,0 +1,82 @@
+<html>
+
+<head>
+  <title>THPT chuyên Lê Hồng Phong</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="All.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <nav class="nav-container">
+    <div class="nav-container nav-container-left">
+      <a href="Homepage.html" class="logo-container">
+        <div class="logo-banner">
+          <img src="Logo_LHP.png" alt="Logo_LHP" class="logo">
+        </div>
+      </a>
+      <div class="nav-container">
+        <a href="Aboutus.html">About us</a>
+        <i class="material-icons dropdown-2">arrow_drop_down</i>
+        <div class="nav-container optional-content-2">
+          <a href="News.html">News</a>
+          <a href="Admission.html">Admission</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-container nav-container-right">
+      <a href="Contact.html" class="yellow">Contact</a>
+      <i class="material-icons dropdown-1">arrow_drop_down</i>
+      <div class="nav-container optional-content-1">
+        <a href="OurStaffs.html">Our Staffs</a>
+        <a href="OurStudents.html">Our Students</a>
+      </div>
+    </div>
+  </nav>
+  <div class="home-banner">
+    <h1>Contact us</h1>
+  </div>
+  <main>
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p>If you have any questions, please feel free to contact us at:</p>
+        <ul>
+            <li><strong>Address:</strong> 235 Nguyễn Văn Cừ, phường 4, quận 5, TP. Hồ Chí Minh</li>
+            <li><strong>Phone:</strong> (+84 - 28) 38398506</li>
+            <li><strong>Email:</strong> info@lehongphong.edu.vn</li>
+        </ul>
+        <h2>Get in Touch</h2>
+        <form method="post" action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone number:</label>
+            <input type="number" id="phone" name="phone" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="contactChoice">Preferred method of contact:</label>
+            <div class="choice">
+                <input type="checkbox" id="contactChoiceEmail" name="contactChoice" value="email">
+                <label for="contactChoiceEmail">Email</label>
+                <input type="checkbox" id="contactChoicePhone"
+ name="contactChoice" value="phone">
+                <label for="contactChoicePhone">Phone</label>
+            </div>
+            <div class="send" style="flex-direction: row-reverse;">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+  </main>
+  <footer>
+    <p>
+      Trường THPT Chuyên Lê Hồng Phong - Tp. Hồ Chí Minh<br>
+      Địa chỉ: 235 Nguyễn Văn Cừ, phường 4, quận 5, TP. Hồ Chí Minh. <br>
+      Điện thoại: (+84 - 28) 38398506.
+    </p>
+  </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

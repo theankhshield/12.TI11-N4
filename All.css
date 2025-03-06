@@ -154,6 +154,60 @@ section.News{
     font-size: large;
 }
 
+form {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--light-blue);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+form div {
+    display: flex;
+    align-items: center;
+}
+    form input, form textarea {
+        margin: 0 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: medium;
+    }
+
+    form input:focus, form select:focus, form textarea:focus {
+        outline: 3px solid var(--nav-blue);
+    }
+
+    form label {
+        font-weight: bold;
+        color: white;
+    }
+
+    form button {
+        background-color: var(--nav-blue);
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    form input[type="checkbox"] {
+        margin: 0 20px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    form input[type="checkbox"]:focus {
+        outline: 3px solid var(--nav-blue);
+    }
+    form button:hover {
+        background-color: var(--dark-blue);
+    }
+form div label{
+    padding: 10px;
+}
 .admission-header{
     border-radius: 20px;
     background-color: var(--nav-blue);
