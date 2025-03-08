@@ -26,3 +26,4 @@ Step 2: Write commit message and press commit
 At the bottom left, press the sync button (refress button)
 
 ![alt text](image.png)
+#test
