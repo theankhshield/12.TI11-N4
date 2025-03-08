@@ -301,52 +301,6 @@ th {
     font-weight: bold;
 }
   
-  .card-content {
-    position: relative;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card-title {
-    margin-top: 0;
-    font-size: large;
-    font-weight: bold;
-    color: black;
-    white-space: wrap;
-}
-.card-title:hover {
-    color: gray;
-}
-
-.card-description {
-    color: #666;
-    margin-top: 20px;
-    overflow: hidden;
-}
-
-.card-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--dark-blue);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.card-link:hover {
-    background-color: var(--light-blue);
-}
-
-/* #endregion card */  
-
-/* #endregion main */
-
-/* #region footer */
-
-
 
 footer{
     background-color: var(--nav-blue);
@@ -432,4 +386,73 @@ footer{
     .descript-card {
         min-width: calc(50% - 20px);
     }
+}
+
+.table2{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.date{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 13%;
+    text-align: center;
+    color: #1f3965;
+    background-color: #efb623;
+}
+.subj_alt_1, .subj_alt_2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.subj_alt_1{
+    background-color: #6796e1;
+}
+.subj_alt_2, .subj_count, .time{
+    background-color: #9abffb;
+}
+.subj_count, .time{
+    font-size: 75%;
+}
+.subj_count{
+    width: 3%;
+    font-weight: bold;
+}
+.time{
+    width: 5%;
+    color: rgb(73, 73, 73);
+    font-style: italic;
+}
+
+.thanhtich td,th {
+    border: 1px solid black;
+    padding: 12px;
+    text-align: center;
+}
+.thanhtich{
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 400px;
+    min-width: 200px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }

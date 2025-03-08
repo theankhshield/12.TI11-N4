@@ -5,6 +5,25 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="All.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .image-gallery img {
+        width: 300px;
+        height: 200px;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .container {            
+    padding: 20px;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -19,113 +38,440 @@
         <a href="Aboutus.html">Giới thiệu</a>
         <i class="material-icons dropdown-2">arrow_drop_down</i>
         <div class="nav-container optional-content-2">
-          <a href="News.html">Tin tức</a>
+          <a href="News.html">Hoạt động</a>
           <a href="Admission.html">Tuyển sinh</a>
-        </div>
       </div>
     </div>
     <div class="nav-container nav-container-right">
-      <a href="Contact.html" class="yellow">Liên hệ</a>
+      <a href="Contactus.html" class="yellow">Liên hệ</a>
       <i class="material-icons dropdown-1">arrow_drop_down</i>
-      <div class="nav-container optional-content-1">
-        <a href="OurStaffs.html">Giáo viên</a>
-        <a href="OurStudents.html">Học sinh</a>
-      </div>
     </div>
   </nav>
   <div class="home-banner">
-    <h1>THPT chuyên Lê Hồng Phong</h1>
+    <h1>Cuộc sống của một học sinh</h1>
   </div>
   <main>
-    <section class="news-section">
-        <article class="news-article">
-            <h2>Thành tựu gần đây</h2>
-            <div class="carousel-container">
-                <button class="carousel-button prev">❮</button>
-                <div class="carousel">
-                  <div class="card descript-card">
-                    <img src="placeholder.svg" alt="Hình ảnh thẻ" class="card-image">
-                    <div class="card-content">
-                      <a href="#" class="card-title">Tiêu đề thẻ 1</a>
-                      <p class="card-description">Đây là mô tả của mục thẻ. Nó cung cấp chi tiết ngắn gọn về nội dung của thẻ.</p>
-                    </div>
-                  </div>
-                  <div class="card descript-card">
-                    <img src="placeholder.svg" alt="Hình ảnh thẻ" class="card-image">
-                    <div class="card-content">
-                      <a class="card-title">Tiêu đề thẻ 1</a>
-                      <p class="card-description">Đây là mô tả của mục thẻ. Nó cung cấp chi tiết ngắn gọn về nội dung của thẻ.</p>
-                    </div>
-                  </div>
-                  <div class="card descript-card">
-                    <img src="placeholder.svg" alt="Hình ảnh thẻ" class="card-image">
-                    <div class="card-content">
-                      <a class="card-title">Tiêu đề thẻ 1</a>
-                      <p class="card-description">Đây là mô tả của mục thẻ. Nó cung cấp chi tiết ngắn gọn về nội dung của thẻ.</p>
-                    </div>
-                  </div>
-                  <div class="card descript-card">
-                    <img src="placeholder.svg" alt="Hình ảnh thẻ" class="card-image">
-                    <div class="card-content">
-                      <a class="card-title">Tiêu đề thẻ 1</a>
-                      <p class="card-description">Đây là mô tả của mục thẻ. Nó cung cấp chi tiết ngắn gọn về nội dung của thẻ.</p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-button next">❯</button>
+    <section class="student-life">
+        <p>
+            Học sinh tại trường THPT chuyên Lê Hồng Phong được trải nghiệm một môi trường học tập năng động và sáng tạo. Các em không chỉ được học các môn học chính khóa mà còn được tham gia vào nhiều câu lạc bộ, hoạt động ngoại khóa và các cuộc thi học thuật. Điều này giúp các em phát triển toàn diện cả về kiến thức lẫn kỹ năng mềm. Học sinh thường bắt đầu ngày mới với những tiết học đầy hứng khởi, sau đó là các hoạt động thể thao, nghệ thuật và các buổi sinh hoạt câu lạc bộ. Cuộc sống học đường tại đây luôn tràn đầy niềm vui và sự gắn kết giữa các học sinh.
+        </p>
+        <div class="header">
+              <h2>Thời khóa biểu của một học sinh</h2>
+          </div>
+        <p>
+            Dưới đây là thời khóa biểu của một học sinh tại trường THPT chuyên Lê Hồng Phong. Thời khóa biểu này bao gồm các môn học chính khóa và các hoạt động ngoại khóa, giúp học sinh phát triển toàn diện cả về kiến thức lẫn kỹ năng mềm.
+        </p>
+        <table>
+            <tr>
+                <th>Tiết</th>
+                <th>Buổi</th>
+                <th>Thứ Hai</th>
+                <th>Thứ Ba</th>
+                <th>Thứ Tư</th>
+                <th>Thứ Năm</th>
+                <th>Thứ Sáu</th>
+                <th>Thứ Bảy</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td rowspan="4">Sáng</td>
+                <td>Toán</td>
+                <td>Văn</td>
+                <td>Tiếng Anh</td>
+                <td>Hóa</td>
+                <td>Sinh</td>
+                <td>GDTC</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Lý</td>
+                <td>Sinh</td>
+                <td>Hóa</td>
+                <td>Toán</td>
+                <td>Văn</td>
+                <td>Tiếng Anh</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Văn</td>
+                <td>Toán</td>
+                <td>Lý</td>
+                <td>Tiếng Anh</td>
+                <td>HDTN & HN</td>
+                <td>CĐ Địa</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Địa</td>
+                <td>Sử</td>
+                <td>Công nghệ</td>
+                <td>Văn</td>
+                <td>HDTN</td>
+                <td>Tiếng Anh</td>
+            </tr>
+            <tr class="break-row">
+                <td colspan="8">Nghỉ trưa</td>
+            </tr>
+    
+            <tr>
+                <td>5</td>
+                <td rowspan="4">Chiều</td>
+                <td>GDTC</td>
+                <td>Hóa</td>
+                <td>Văn</td>
+                <td>Toán</td>
+                <td>Sinh</td>
+                <td>GDQP</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>GDTC</td>
+                <td>Tiếng Anh</td>
+                <td>Lý</td>
+                <td>GDTC</td>
+                <td>Công nghệ</td>
+                <td>Toán</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Hóa</td>
+                <td>Sinh</td>
+                <td>Toán</td>
+                <td>Địa</td>
+                <td>Văn</td>
+                <td>Tiếng Anh</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Toán</td>
+                <td>Văn</td>
+                <td>GDQP</td>
+                <td>GDTC</td>
+                <td>Sinh</td>
+                <td>Tiếng Anh</td>
+            </tr>
+        </table>
+        <br>
+        <p>Bạn có thể tự tạo TKB riêng cho mình (bấm vào ô trống để điền thông tin)</p>
+        <h1><strong>THỜI KHOÁ BIỂU</strong></h1>
+        <div class="table2">
+            <table border="1">
+                <tr> <!-- Thứ trong tuần -->
+                    <th class="time"></th>
+                    <th class="subj_count">Tiết</th>
+                    <th class="date">MON</th>
+                    <th class="date">TUE</th>
+                    <th class="date">WED</th>
+                    <th class="date">THU</th>
+                    <th class="date">FRI</th>
+                    <th class="date">SAT</th>
+                    <th class="date">SUN</th>
+                </tr>
+    
+                <tr> <!-- Chào cờ -->
+                    <td class="time">7:00<br>7:25</td>
+                    <td class="subj_count"></td>
+                    <td class="subj_alt_1">Chào cờ</td>
+                    <td bgcolor="#a7a7a7"></td>
+                    <td bgcolor="#a7a7a7"></td>
+                    <td bgcolor="#a7a7a7"></td>
+                    <td bgcolor="#a7a7a7"></td>
+                    <td bgcolor="#a7a7a7"></td>
+                    <td bgcolor="#a7a7a7"></td>
+                </tr>
+                <tr> <!-- Tiết 1 sáng -->
+                    <td class="time">7:30<br>8:15</td>
+                    <td class="subj_count">1</td>
+                    <td class="subj_alt_1">HĐTNHN</td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                </tr>
+                <tr> <!-- Tiết 2 sáng -->
+                    <td class="time">8:20<br>9:05</td>
+                    <td class="subj_count">2</td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                </tr>
+                <tr> <!-- Ra chơi sáng -->
+                    <td class="time"></td>
+                    <td class="subj_count"></td>
+                    <td colspan="7" style="padding-top: 5px; padding-bottom: 5px;" bgcolor="#c8dbfb">Ra chơi</td>
+                </tr>
+                <tr> <!-- Tiết 3 sáng -->
+                    <td class="time">9:25<br>10:10</td>
+                    <td class="subj_count">3</td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                </tr>
+                <tr> <!-- Tiết 4 sáng -->
+                    <td class="time">10:15<br>11:00</td>
+                    <td class="subj_count">4</td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                </tr>
+    
+    
+    
+                <tr> <!-- Nghỉ trưa -->
+                    <td class="time"></td>
+                    <td class="subj_count"></td>
+                    <td colspan="7" style="padding-top: 5px; padding-bottom: 5px;" bgcolor="#efb623">Nghỉ trưa</td>
+                </tr>
+                <tr> <!-- Tiết 1 chiều -->
+                    <td class="time">13:00<br>13:45</td>
+                    <td class="subj_count">1</td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                </tr>
+                <tr> <!-- Tiết 2 chiều -->
+                    <td class="time">13:50<br>14:35</td>
+                    <td class="subj_count">2</td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                </tr>
+                <tr> <!-- Ra chơi chiều -->
+                    <td class="time"></td>
+                    <td class="subj_count"></td>
+                    <td colspan="7" style="padding-top: 5px; padding-bottom: 5px;" bgcolor="#c8dbfb">Ra chơi</td>
+                </tr>
+                <tr> <!-- Tiết 3 chiều -->
+                    <td class="time">14:55<br>15:40</td>
+                    <td class="subj_count">3</td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                </tr>
+                <tr> <!-- Tiết 4 chiều -->
+                    <td class="time">15:45<br>16:30</td>
+                    <td class="subj_count">4</td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                    <td contenteditable="true" class="subj_alt_2"></td>
+                    <td contenteditable="true" class="subj_alt_1"></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="header">
+            <h2>Hoạt động ngoại khóa</h2>
+        </div>
+        <div class="image-gallery">
+          <h2>Các hoạt động trong trường:</h2>
+          <img src="https://cdn2.tuoitre.vn/471584752817336320/2024/11/20/chuyen-le-hong-phong-van-nghe-tri-an-thay-co-6-17320733656031576951512.jpg" alt="Văn nghệ">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRglb67ZBPZUo2m4RWGMhX5xokGySjZZ8VS0Q&s" alt="Việt dã">
+          <img src="https://images2.thanhnien.vn/528068263637045248/2024/5/24/1-17165426790201040453739.jpg" alt="Hoạt động ngoại khóa">
+        </div>
+            <h2>Video giới thiệu</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/h8CdO0-65qk?si=bJYgQWfh06BT3md6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-        </article>
-        <article class="news-article">
-            <h2>Sự kiện sắp tới</h2>
-            <p>Tham gia lễ hội trường hàng năm vào tháng tới. Sẽ có nhiều hoạt động và biểu diễn của các học sinh tài năng của chúng tôi.</p>
-            <div class="carousel-container">
-                <button class="carousel-button prev">❮</button>
-                <div class="carousel">
-                  <div class="card descript-card">
-                    <img src="placeholder.svg" alt="Hình ảnh thẻ" class="card-image">
-                    <div class="card-content">
-                      <a href="#" class="card-title">Tiêu đề thẻ 1</a>
-                      <p class="card-description">Đây là mô tả của mục thẻ. Nó cung cấp chi tiết ngắn gọn về nội dung của thẻ.</p>
-                    </div>
-                  </div>
-                  <div class="card descript-card">
-                    <img src="placeholder.svg" alt="Hình ảnh thẻ" class="card-image">
-                    <div class="card-content">
-                      <a class="card-title">Tiêu đề thẻ 1</a>
-                      <p class="card-description">Đây là mô tả của mục thẻ. Nó cung cấp chi tiết ngắn gọn về nội dung của thẻ.</p>
-                    </div>
-                  </div>
-                  <div class="card descript-card">
-                    <img src="placeholder.svg" alt="Hình ảnh thẻ" class="card-image">
-                    <div class="card-content">
-                      <a class="card-title">Tiêu đề thẻ 1</a>
-                      <p class="card-description">Đây là mô tả của mục thẻ. Nó cung cấp chi tiết ngắn gọn về nội dung của thẻ.</p>
-                    </div>
-                  </div>
-                  <div class="card descript-card">
-                    <img src="placeholder.svg" alt="Hình ảnh thẻ" class="card-image">
-                    <div class="card-content">
-                      <a class="card-title">Tiêu đề thẻ 1</a>
-                      <p class="card-description">Đây là mô tả của mục thẻ. Nó cung cấp chi tiết ngắn gọn về nội dung của thẻ.</p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-button next">❯</button>
+        <div class="carousel-container" style="height: 400px;">
+          <h2>Các CLB của trường:</h2>
+          <button class="carousel-button prev">❮</button>
+          <div class="carousel">
+              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fclbbaochiclhp%2Fposts%2Fpfbid02bGPAKxJxMiCvWDSyuQnbgxNbvkHYeJ11My2FTwEkTQFVdAYRrzsQef7JnZdPixr7l&show_text=true&width=500" width="500" height="488" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" class="card img-card"></iframe>
+              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02jELkA1CXXQYVAw9ezN1KeBTZoKcz5W9zJdorgUqWES8wvW5G2uQbAusiH1rokVtWl%26id%3D100063355140436&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" class="img-card card"></iframe>
+              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fhuongnghieplhp%2Fposts%2Fpfbid024aUbNse5nrgD6dttYiU33Kr8AsGuq6BYgykDiCaU2zzgZqreeC2QytX5qKg2Q9Hsl&show_text=true&width=500" width="500" height="729" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" class="card img-card"></iframe>
+          </div>
+          <button class="carousel-button next">❯</button>
+      </div>
+    <br>
+        <section class="section achievements">
+          <div class="header">
+            <h2>Thành tích nổi bật</h2>
+          </div>         
+            <ul>
+              <li> 📚 Tỉ lệ đậu đại học nằm trên 98%.</li>
+              <li> 🏆 Học sinh đạt giải quốc gia và quốc tế trong các kỳ thi khoa học.</li>
+              <li> 🎭 Hoạt động văn nghệ và thể thao phong phú, giành nhiều giải thưởng.</li>
+              <li> 💡 Các câu lạc bộ học thuật và sáng tạo mạnh mẽ, giúp học sinh phát triển toàn diện.</li>
+            </ul>
+        </section>
+          <div class="wrapper">
+            <h2>Vinh danh giải Nhất học sinh giỏi 12 cấp Thành phố năm học 2024-2025</h2> 
+            <div class="table-container">
+              <table class="thanhtich">
+                  <tr>
+                      <th>Môn</th>
+                      <th>Tên</th>
+                      <th>Lớp</th>
+                  </tr>
+                  <tr>
+                      <td rowspan="3">Toán</td>
+                      <td>Huỳnh Minh Quân</td>
+                      <td>12CV1</td>
+                  </tr>
+                  <tr>
+                      <td>Phạm Đức Bình</td>
+                      <td>12CT1</td>
+                  </tr>
+                  <tr>
+                      <td>Lê Thiện Đỗ Thịnh</td>
+                      <td>12CT2</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="2">Vật Lí</td>
+                      <td>Nguyễn Lê Hữu Thoại</td>
+                      <td>12CT1</td>
+                  </tr>
+                  <tr>
+                      <td>Phạm Việt Phúc</td>
+                      <td>12CL1</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="4">Hóa học</td>
+                      <td>Nguyễn Gia Nghiệp</td>
+                      <td>12CH1</td>
+                  </tr>
+                  <tr>
+                      <td>Trần Kiên</td>
+                      <td>12CH1</td>
+                  </tr>
+                  <tr>
+                      <td>Võ Lê Hoàn Vũ</td>
+                      <td>12CH1</td>
+                  </tr>
+                  <tr>
+                      <td>Đinh Ngọc Bảo Châu</td>
+                      <td>12CH2</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="5">Sinh học</td>
+                      <td>Phạm Ngọc Bảo Trân</td>
+                      <td>12CS</td>
+                  </tr>
+                  <tr>
+                      <td>Ngô Khánh Tường</td>
+                      <td>12CS</td>
+                  </tr>
+                  <tr>
+                      <td>Nguyễn Ngọc Minh Hân</td>
+                      <td>12A1</td>
+                  </tr>
+                  <tr>
+                      <td>Nguyễn Hoàng Lân</td>
+                      <td>12A1</td>
+                  </tr>
+                  <tr>
+                      <td>Nguyễn Võ Ánh Dương</td>
+                      <td>12CS</td>
+                  </tr>
+                  <tr>
+                      <td>Tin học</td>
+                      <td>Đặng Thành Nghĩa</td>
+                      <td>12CTIN-A</td>
+                  </tr>
+              </table>
+              
+              <table class="thanhtich">
+                  <tr>
+                      <td rowspan="3">Ngữ Văn</td>
+                      <td>Lê Hồng Bảo Ngọc</td>
+                      <td>12CV2</td>
+                  </tr>
+                  <tr>
+                      <td>Bùi Trần Thùy Vân</td>
+                      <td>12CV1</td>
+                  </tr>
+                  <tr>
+                      <td>Trần Anh Đào</td>
+                      <td>12CV1</td>
+                  </tr>
+                  <tr>
+                      <td>Lịch sử</td>
+                      <td>Võ Đào Quốc Anh</td>
+                      <td>12CSU-Đ</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="7">Tiếng Anh</td>
+                      <td>Nguyễn Minh Khôi</td>
+                      <td>12CA1</td>
+                  </tr>
+                  <tr>
+                      <td>Nguyễn Ái Nghi</td>
+                      <td>12CTIN-A</td>
+                  </tr>
+                  <tr>
+                      <td>Đặng Châu Anh</td>
+                      <td>12CA1</td>
+                  </tr>
+                  <tr>
+                      <td>Vũ Thanh Nhàn</td>
+                      <td>12CA2</td>
+                  </tr>
+                  <tr>
+                      <td>Thái Phong Hào</td>
+                      <td>12CA1</td>
+                  </tr>
+                  <tr>
+                      <td>Hồng Ngọc Khanh</td>
+                      <td>12CA1</td>
+                  </tr>
+                  <tr>
+                      <td>Nguyễn Xuân Minh</td>
+                      <td>12CA1</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="3">Tiếng Pháp</td>
+                      <td>Nguyễn Đức Thành</td>
+                      <td>12SN</td>
+                  </tr>
+                  <tr>
+                      <td>Lê Ngọc Bảo Châu</td>
+                      <td>12SN</td>
+                  </tr>
+                  <tr>
+                      <td>Đoàn Minh Yến</td>
+                      <td>12SN</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="2">Tiếng Nhật</td>
+                      <td>Mai Hồng Phúc</td>
+                      <td>12CTR-N</td>
+                  </tr>
+                  <tr>
+                      <td>Nguyễn Trang My</td>
+                      <td>12CTR-N</td>
+                  </tr>
+              </table>
             </div>
-        </article>
-        <article class="news-article">
-            <h2>Cơ sở vật chất mới</h2>
-            <p>Chúng tôi rất vui mừng thông báo về việc khai trương phòng thí nghiệm khoa học và thư viện mới của chúng tôi. Những cơ sở này sẽ cung cấp cho học sinh của chúng tôi nhiều tài nguyên hơn cho việc học tập của họ. <a href="Facilities.html">Đọc thêm</a></p>
-            
-            <div class="carousel-container" style="height: 400px;">
-                <button class="carousel-button prev">❮</button>
-                <div class="carousel">
-                  <img src="placeholder.svg" alt="" class="card img-card">
-                  <img src="placeholder.svg" alt="" class="card img-card">
-                </div>
-                <button class="carousel-button next">❯</button>
-            </div>
-        </article>
+          </div>
     </section>
   </main>
   <footer>

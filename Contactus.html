@@ -5,6 +5,64 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="All.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .danhgia {
+      background-color: white;
+      display: flex;
+      gap: 15px; 
+      align-items: center;
+      flex-wrap: wrap; 
+    }
+    .form-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    }
+
+    .form-container h1, h2, b {
+        color: #333;
+    }
+
+    .form-container form {
+        margin-bottom: 20px;
+    }
+
+    .form-container textarea {
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    input[type="text"], input[type="tel"], input[type="email"], input[type="range"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+        margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: var(--nav-blue);
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+  input[type="submit"]:hover {
+        background-color: var(--dark-blue);
+
+  }
+  </style>
 </head>
 
 <body>
@@ -19,18 +77,13 @@
         <a href="Aboutus.html">Giới thiệu</a>
         <i class="material-icons dropdown-2">arrow_drop_down</i>
         <div class="nav-container optional-content-2">
-          <a href="News.html">Tin tức</a>
+          <a href="News.html">Hoạt động</a>
           <a href="Admission.html">Tuyển sinh</a>
-        </div>
       </div>
     </div>
     <div class="nav-container nav-container-right">
-      <a href="Contact.html" class="yellow">Liên hệ</a>
+      <a href="Contactus.html" class="yellow">Liên hệ</a>
       <i class="material-icons dropdown-1">arrow_drop_down</i>
-      <div class="nav-container optional-content-1">
-        <a href="OurStaffs.html">Giáo viên</a>
-        <a href="OurStudents.html">Học sinh</a>
-      </div>
     </div>
   </nav>
   <div class="home-banner">
@@ -66,6 +119,120 @@
                 <button type="submit">Gửi</button>
             </div>
         </form>
+    </section>
+    <section class="khaosat">
+    <div class="form-container">
+      <center><h1><b> Khảo sát mức độ hài lòng của học sinh về trường học </b></h1></center>
+      <hr>
+      <h2><b>I. Thông tin cá nhân</b></h2>
+      <form method="POST"> 
+          <label for="username"> Họ và tên học sinh </label>
+          <input type="text" name="username" id="username" placeholder="Nguyễn Văn A" required>
+  
+
+          <label for="truong"> Trường đang học</label>
+          <input type="text" name="truong" id="truong" placeholder="THPT Chuyên Lê Hồng Phong" required>
+          
+          <label for="lop"> Lớp</label>
+          <input type="text" name="lop" id="lop" placeholder="12CSU-Đ" required>
+  
+
+          <label for="phone"> Số điện thoại</label>
+          <input type="tel" name="phone" id="phone" placeholder="0912345678" required>
+          
+          <label for="mail"> Email </label>
+          <input type="email" name="mail" id="mail" placeholder="abc@gmail.com" required>
+      </form>
+      
+      
+      <h2><b>II. Đánh giá về cơ sở vật chất</b></h2>
+      <ol>
+          <li><b> Bạn đánh giá cơ sở vật chất của trường như thế nào?</b></li>
+          <form class="danhgia">
+              <input type="radio" name="csvc" id="ratot1"> Rất tốt
+              <br><input type="radio" name="csvc" id="tot1"> Tốt
+              <br><input type="radio" name="csvc" id="bth1"> Bình thường
+              <br><input type="radio" name="csvc" id="caithien1"> Cần cải thiện
+          </form>
+
+          <li> <b>Đánh giá các yếu tố sau <i>(theo thang điểm 1 - 5)</i></b></li>
+          <table border="1">
+              <tr height="40px">   
+                  <th>Phòng học và các phương tiện dạy học</th>
+                  <th><form><input type="range" name="volume" id="ptdh" min="0" max="5" step="1"></form></th>
+              </tr>
+              <tr height="40px">
+                  <th>Nhà vệ sinh</th>
+                  <th><form><input type="range" name="volume" id="nvs" min="0" max="5" step="1"></form></th>
+              </tr>
+              <tr height="40px">
+              <th>Sân chơi, khuôn viên</th>
+              <th><form> <input type="range" name="volume" id="sanchoi" min="0" max="5" step="1"></form></th>
+              </tr>
+          </table>
+          <li><b>Bạn có góp ý gì để cải thiện cơ sở vật chất?</b></li>
+          <textarea id="ykien1" name="ykien1" rows="10" cols="55"></textarea>        
+      </ol>
+  
+      <h2><b>III. Đánh giá về chất lượng giảng dạy</b></h2>
+      <ol>
+          <li><b>Hiện tại bạn đang học những môn học lựa chọn nào?</b></li>
+              <form class="danhgia" method="POST">
+                  <input type="checkbox" name="ly" id="ly"> Vật lý
+                  <br><input type="checkbox" name="hoa" id="hoa"> Hóa học
+                  <br><input type="checkbox" name="sinh" id="sinh"> Sinh học
+                  <br><input type="checkbox" name="dia" id="dia"> Địa lý
+                  <br><input type="checkbox" name="tin" id="tin"> Tin học
+                  <br><input type="checkbox" name="gdktpl" id="gdktpl"> Giáo dục kinh tế và pháp luật
+                  <br><input type="checkbox" name="cn" id="cn"> Công nghệ
+                  <br><input type="checkbox" name="nhac" id="an"> Âm nhạc
+                  <br><input type="checkbox" name="mt" id="mt"> Mỹ thuật
+              </form>
+          <li><b>Bạn có hài lòng về chất lượng giảng dạy của giáo viên không?</b></li>
+              <form class="danhgia">
+                  <input type="radio" name="clgd" id="rathailong"> Rất hài lòng
+                  <br><input type="radio" name="clgd" id="hailong11"> Hài lòng
+                  <br><input type="radio" name="clgd" id="bth2"> Bình thường
+                  <br><input type="radio" name="clgd" id="khonghailong"> Không hài lòng
+              </form>
+          <li><b>Giáo viên có tận tình hỗ trợ học sinh không?</b></li>
+              <form class="danhgia" method="POST">
+                  <input type="radio" name="ht" id="ss"> Có, rất sẵn sàng hỗ trợ
+                  <br><input type="radio" name="ht" id="tt"> Thỉnh thoảng hỗ trợ
+                  <br><input type="radio" name="ht" id="ik"> Ít khi hỗ trợ
+                  <br><input type="radio" name="ht" id="khonghotro"> Không hỗ trợ
+              </form>
+      </ol>
+      <h2><b>IV. Đánh giá về các hoạt động ngoại khóa</b></h2>
+      <ol>
+          <li><b>Bạn có cảm thấy môi trường học tập thân thiện không?</b></li>
+              <form class="danhgia" method="POST">
+                  <input type="radio" name="mtht" id="rtt"> Rất thân thiện
+                  <br><input type="radio" name="mtht" id="thanthien"> Thân thiện
+                  <br><input type="radio" name="mtht" id="bth3"> Bình thường
+                  <br><input type="radio" name="mtht" id="khongtt"> Không thân thiện
+              </form>
+          <li><b>Nhà trường, tổ chuyên môn, câu lạc bộ có thường xuyên tổ chức các hoạt động ngoại khóa không?</b></li>
+              <form class="danhgia" method="POST">
+                  <input type="radio" name="tansuat" id="tx"> Thường xuyên tổ chức
+                  <br><input type="radio" name="tansuat" id="tt2"> Thỉnh thoảng tổ chức
+                  <br><input type="radio" name="tansuat" id="dkhi"> Đôi khi tổ chức
+                  <br><input type="radio" name="tansuat" id="khongtc"> Không tổ chức
+              </form class="danhgia" method="POST">
+          <li><b>Bạn có hài lòng với các hoạt động ngoại khóa của trường không <i> (theo thang điểm 1 - 5)</i>?</b></li>
+              <form method="POST"><input type="range" name="volume" id="hdnk" min="0" max="5" step="1"></form>
+      </ol>
+      <h2><b>V. Lời kết</b></h2>
+      <ol>
+          <li><b>Bạn có gặp khó khăn gì khi học tập tại trường không? </b></li>
+              <textarea id="ykien2" name="ykien2" rows="10" cols="55"></textarea>
+          <li><b>Bạn mong muốn nhà trường cải thiện điều gì nhất?</b></li>
+              <textarea id="ykien3" name="ykien3" rows="10" cols="55"></textarea>
+          <li><b>Những đóng góp ý kiến khác <i>(nếu có)</i></b></li>
+              <textarea id="ykien4" name="ykien4" rows="10" cols="55"></textarea>
+      </ol>
+      <center><input type="submit" value="Xác nhận"></center>
+      </div>  
     </section>
   </main>
   <footer>
