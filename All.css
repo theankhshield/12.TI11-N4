@@ -4,6 +4,12 @@
 p{
     text-indent: 10px;
 }
+.article img{
+    object-fit: contain;
+    width: 100%;
+    margin-top: 20px;
+}
+
 article{
     padding: 20px;
     border-radius: 10px;
@@ -211,7 +217,7 @@ form div {
 form div label{
     padding: 10px;
 }
-.admission-header{
+.header{
     border-radius: 20px;
     background-color: var(--nav-blue);
     color: #f2f2f2;
@@ -257,7 +263,8 @@ form div label{
 .img-card{
     margin: 10px;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    max-height: 400px;
 }
 
 .descript-card {
@@ -274,8 +281,25 @@ form div label{
   
   .card-image {
     width: 100%;
-    height: auto;
+    height: 20vw;
+    object-fit: cover;
   }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+.break-row {
+    background-color: #d9f2d9;
+    font-weight: bold;
+}
   
   .card-content {
     position: relative;
